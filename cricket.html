@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Game</title>
+
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+    let randomNumber = Math.random() * 3;
+    let computerchoice;
+    if (randomNumber > 0 && randomNumber <= 1){
+       computerchoice = 'Bat';
+        // console.log('computer choice is Bat');
+    } else if(randomNumber > 1 && randomNumber <= 2){
+       computerchoice = 'Ball';
+        // console.log('computer choice is Ball');
+    }else{
+        computerchoice = 'Stump';
+        // console.log('computer choice is Stump');
+    }
+
+    let resultMsg;
+    if(computerchoice === 'Ball'){
+        resultMsg = 'Raja Won';
+    }else if(computerchoice === 'Bat' ){
+        resultMsg = 'Raja === computer ';
+    }else if(computerchoice === 'Stump'){
+        resultMsg = 'computer has Won';
+    }
+    alert(`You Have choosen Bat. computer choice is ${computerchoice} and ${resultMsg}`);
+    ">Bat</button>
+
+ <button onclick="
+    let randomNumber = Math.random() * 3;
+    let computerchoice;
+    if (randomNumber > 0 && randomNumber <= 1){
+       computerchoice = 'Bat';
+    } else if(randomNumber > 1 && randomNumber <= 2){
+       computerchoice = 'Ball';
+    } else {
+       computerchoice = 'Stump';
+    }
+
+    let resultMsg;
+    // Player chose Ball
+    if(computerchoice === 'Stump'){
+        resultMsg = 'Raja Won';
+    } else if(computerchoice === 'Ball'){
+        resultMsg = 'Raja === computer';
+    } else {
+        resultMsg = 'Computer has Won';
+    }
+    alert(`You Have choosen Ball. computer choice is ${computerchoice} and ${resultMsg}`);
+">Ball</button>
+
+    <button onclick="
+    let randomNumber = Math.random() * 3;
+    let computerchoice;
+    if (randomNumber > 0 && randomNumber <= 1){
+       computerchoice = 'Bat';
+        // console.log('computer choice is Bat');
+    } else if(randomNumber > 1 && randomNumber <= 2){
+       computerchoice = 'Ball';
+        // console.log('computer choice is Ball');
+    }else{
+        computerchoice = 'Stump';
+        // console.log('computer choice is Stump');
+    }
+
+    let resultMsg;
+    if(computerchoice === 'Ball'){
+        resultMsg = 'Raja Won';
+    }else if(computerchoice === 'Bat' ){
+        resultMsg = 'Raja Won ';
+    }else if(computerchoice === 'Stump'){
+        resultMsg = 'Raja === computer';
+    }
+    alert(`You Have choosen Stump. computer choice is ${computerchoice} and ${resultMsg}`);">Stump</button>
+</body>
+</html>
